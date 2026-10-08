@@ -785,3 +785,1874 @@ main {
   outline: 3px solid var(--black);
   outline-offset: 3px;
 }
+
+/* Udstyr og materialer – Desktop (Figma frame 48:41) */
+.equipment-page {
+  grid-template-rows: 160px 320px 346px 196px;
+}
+
+.equipment-page .site-header {
+  position: relative;
+  grid-column: 1 / -1;
+  grid-row: 1;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+}
+
+.equipment-page .brand {
+  position: absolute;
+  top: 75px;
+  left: -9px;
+  display: block;
+  width: 353px;
+  height: 96px;
+  padding: 0;
+}
+
+.equipment-page .brand__tree {
+  position: absolute;
+  top: -52px;
+  left: 42px;
+  width: 35px;
+  height: 55px;
+}
+
+.equipment-page .brand__name {
+  position: absolute;
+  top: 0;
+  left: 36px;
+  font-size: 48px;
+  line-height: 1;
+}
+
+.equipment-page .brand__tagline {
+  position: absolute;
+  top: 54px;
+  left: 64px;
+  margin: 0;
+  font-size: 24px;
+  line-height: 1.15;
+}
+
+.equipment-page .primary-nav {
+  position: absolute;
+  inset: 0;
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+  grid-template-rows: 1fr;
+  padding: 0;
+}
+
+.equipment-page .primary-nav__link {
+  align-self: start;
+  font-size: 32px;
+  line-height: 1.15;
+}
+
+.equipment-page .primary-nav__link--home {
+  grid-column: 4;
+  margin: 85px 0 0 4.5px;
+}
+
+.equipment-page .primary-nav__link--guide {
+  grid-column: 5;
+  margin: 88px 0 0 7.67px;
+}
+
+.equipment-page .primary-nav__link--gear {
+  grid-column: 7;
+  margin: 90px 0 0 10px;
+}
+
+.equipment-page .primary-nav__link--exercise {
+  grid-column: 8;
+  width: 121px;
+  margin: 82px 0 0 11.17px;
+}
+
+.equipment-page .primary-nav__link--advice {
+  grid-column: 9;
+  width: 102px;
+  margin: 88px 0 0 25.33px;
+}
+
+.equipment-page .button--header {
+  grid-column: 11 / 13;
+  width: 203px;
+  height: 61px;
+  margin: 76px 0 0 6.67px;
+}
+
+.equipment-main {
+  display: grid;
+  grid-column: 1 / -1;
+  grid-row: 2 / 5;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+  grid-template-rows: 320px 346px 356px;
+}
+
+.equipment-hero {
+  display: grid;
+  grid-column: 1 / -1;
+  grid-row: 1;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+  grid-template-rows: 100px 37px 32px 90px 1fr;
+}
+
+.equipment-hero__copy {
+  display: grid;
+  grid-column: 1 / 7;
+  grid-row: 1 / -1;
+  grid-template-columns: minmax(0, 1fr);
+  grid-template-rows: 100px 37px 32px 90px 1fr;
+  padding-left: 35px;
+}
+
+.equipment-hero__eyebrow,
+.equipment-hero h1,
+.equipment-hero__description {
+  grid-column: 1;
+  margin: 0;
+  color: var(--black);
+  font-family: var(--font-body);
+  font-style: normal;
+}
+
+.equipment-hero__eyebrow {
+  grid-row: 2;
+  width: 302px;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 1.15;
+  text-transform: uppercase;
+}
+
+.equipment-hero h1 {
+  grid-row: 3;
+  width: 697px;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 22px;
+}
+
+.equipment-hero__description {
+  grid-row: 4;
+  width: 571px;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 1.15;
+}
+
+.equipment-hero__image {
+  display: block;
+  grid-column: 8 / 13;
+  grid-row: 1 / 5;
+  align-self: start;
+  width: 477px;
+  height: 268px;
+  margin: 36px 0 0 12.17px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.equipment-cards {
+  display: grid;
+  grid-column: 1 / -1;
+  grid-row: 2;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+  grid-template-rows: 346px;
+  align-content: start;
+  transform: translateY(-1px);
+}
+
+.equipment-card {
+  position: relative;
+  grid-row: 1;
+  align-self: start;
+  width: 331px;
+  height: 346px;
+  background: var(--sage-green);
+}
+
+.equipment-card--mat {
+  grid-column: 1 / 4;
+  margin-left: 9px;
+}
+
+.equipment-card--water {
+  grid-column: 4 / 7;
+  margin-left: -2px;
+}
+
+.equipment-card--clothes {
+  grid-column: 7 / 10;
+  margin-left: 8px;
+}
+
+.equipment-card--towel {
+  grid-column: 10 / 13;
+  margin-left: 18px;
+}
+
+.equipment-card__image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 331px;
+  height: 189px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.equipment-card--water .equipment-card__image {
+  top: -5px;
+  height: 186px;
+}
+
+.equipment-card--clothes .equipment-card__image {
+  height: 182px;
+}
+
+.equipment-card--towel .equipment-card__image {
+  top: -3px;
+  height: 196px;
+}
+
+.equipment-card__number-image {
+  position: absolute;
+  top: 200px;
+  left: 7px;
+  display: block;
+  width: 56px;
+  height: 55px;
+}
+
+.equipment-card__number {
+  position: absolute;
+  top: 200px;
+  left: 7px;
+  display: grid;
+  width: 56px;
+  height: 55px;
+  place-items: center;
+  color: var(--white);
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.15;
+}
+
+.equipment-card__title,
+.equipment-card__description,
+.equipment-card__status {
+  position: absolute;
+  margin: 0;
+  color: var(--black);
+  font-family: var(--font-body);
+  font-style: normal;
+}
+
+.equipment-card__title {
+  top: 201px;
+  left: 70px;
+  width: 285px;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.15;
+}
+
+.equipment-card__description {
+  top: 237px;
+  left: 63px;
+  width: 217px;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.15;
+}
+
+.equipment-card__status {
+  top: 299px;
+  left: 70px;
+  width: 148px;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 1.15;
+}
+
+.equipment-card--water .equipment-card__title {
+  top: 212px;
+  left: 79px;
+}
+
+.equipment-card--water .equipment-card__description {
+  top: 247px;
+  left: 83px;
+}
+
+.equipment-card--water .equipment-card__status {
+  left: 83px;
+}
+
+.equipment-card--clothes .equipment-card__title {
+  top: 213px;
+  left: 80px;
+}
+
+.equipment-card--clothes .equipment-card__description {
+  top: 244px;
+  left: 80px;
+}
+
+.equipment-card--clothes .equipment-card__status {
+  left: 89px;
+}
+
+.equipment-card--towel .equipment-card__title {
+  top: 234px;
+  left: 87px;
+  width: 256px;
+}
+
+.equipment-card--towel .equipment-card__description {
+  top: 264px;
+  left: 86px;
+}
+
+.equipment-card--towel .equipment-card__status {
+  top: 310px;
+  left: 86px;
+}
+
+.equipment-summary {
+  display: grid;
+  grid-column: 1 / -1;
+  grid-row: 3;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+  grid-template-rows: 6px 33px 91px 48px 1fr;
+}
+
+.equipment-summary__title,
+.equipment-summary__description {
+  grid-column: 1 / 7;
+  margin: 0;
+  color: var(--black);
+  font-family: var(--font-body);
+  font-style: normal;
+}
+
+.equipment-summary__title {
+  grid-row: 2;
+  width: 697px;
+  margin-left: 37px;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.15;
+}
+
+.equipment-summary__description {
+  grid-row: 3;
+  width: 571px;
+  margin-left: 35px;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 1.15;
+}
+
+.equipment-summary__cta {
+  grid-column: 1 / 7;
+  grid-row: 4;
+  justify-content: flex-start;
+  width: 422px;
+  height: 48px;
+  margin-left: 33px;
+  padding: 0 11px;
+  font-size: 32px;
+  line-height: 1.15;
+  white-space: nowrap;
+}
+
+.equipment-page .primary-nav__link:focus-visible {
+  outline: 3px solid var(--black);
+  outline-offset: 3px;
+}
+
+/* Første øvelse – Desktop (Figma frame 51:102) */
+.exercise-page {
+  grid-template-rows: 160px 320px 346px 196px;
+}
+
+.exercise-page .site-header {
+  position: relative;
+  grid-column: 1 / -1;
+  grid-row: 1;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+}
+
+.exercise-page .brand {
+  position: absolute;
+  top: 75px;
+  left: -9px;
+  display: block;
+  width: 353px;
+  height: 96px;
+  padding: 0;
+}
+
+.exercise-page .brand__tree {
+  position: absolute;
+  top: -52px;
+  left: 42px;
+  width: 35px;
+  height: 55px;
+}
+
+.exercise-page .brand__name {
+  position: absolute;
+  top: 0;
+  left: 36px;
+  font-size: 48px;
+  line-height: 1;
+}
+
+.exercise-page .brand__tagline {
+  position: absolute;
+  top: 54px;
+  left: 64px;
+  margin: 0;
+  font-size: 24px;
+  line-height: 1.15;
+}
+
+.exercise-page .primary-nav {
+  position: absolute;
+  inset: 0;
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+  grid-template-rows: 1fr;
+  padding: 0;
+}
+
+.exercise-page .primary-nav__link {
+  align-self: start;
+  font-size: 32px;
+  line-height: 1.15;
+}
+
+.exercise-page .primary-nav__link--home {
+  grid-column: 4;
+  margin: 85px 0 0 4.5px;
+}
+
+.exercise-page .primary-nav__link--guide {
+  grid-column: 5;
+  margin: 88px 0 0 7.67px;
+}
+
+.exercise-page .primary-nav__link--gear {
+  grid-column: 7;
+  margin: 90px 0 0 10px;
+}
+
+.exercise-page .primary-nav__link--exercise {
+  grid-column: 8;
+  width: 121px;
+  margin: 82px 0 0 11.17px;
+}
+
+.exercise-page .primary-nav__link--advice {
+  grid-column: 9;
+  width: 102px;
+  margin: 88px 0 0 25.33px;
+}
+
+.exercise-page .button--header {
+  grid-column: 11 / 13;
+  width: 203px;
+  height: 61px;
+  margin: 76px 0 0 6.67px;
+}
+
+.exercise-main {
+  display: grid;
+  grid-column: 1 / -1;
+  grid-row: 2 / 5;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+  grid-template-rows: 320px 346px 356px;
+}
+
+.exercise-hero {
+  position: relative;
+  grid-column: 1 / -1;
+  grid-row: 1;
+}
+
+.exercise-hero__copy {
+  position: absolute;
+  inset: 0;
+}
+
+.exercise-hero__eyebrow,
+.exercise-hero h1,
+.exercise-hero__description,
+.exercise-hero__duration {
+  position: absolute;
+  margin: 0;
+  color: var(--black);
+  font-style: normal;
+}
+
+.exercise-hero__eyebrow {
+  top: 64px;
+  left: 39px;
+  width: 302px;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 1.15;
+  text-transform: uppercase;
+}
+
+.exercise-hero h1 {
+  top: 101px;
+  left: 39px;
+  width: 697px;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 22px;
+}
+
+.exercise-hero__description {
+  top: 133px;
+  left: 39px;
+  width: 571px;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 1.15;
+}
+
+.exercise-hero__duration {
+  top: 222px;
+  left: 63px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  width: 417px;
+  font-family: var(--font-display);
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 1.15;
+  white-space: nowrap;
+}
+
+.exercise-hero__duration-icon {
+  display: block;
+  flex: 0 0 24px;
+  width: 24px;
+  height: 24px;
+}
+
+.exercise-hero__image {
+  position: absolute;
+  top: 26px;
+  left: calc(58.333333% + 8.17px);
+  display: block;
+  width: 470px;
+  height: 264px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.exercise-steps {
+  display: grid;
+  grid-column: 1 / -1;
+  grid-row: 2;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+  grid-template-rows: 346px;
+  align-content: start;
+}
+
+.exercise-step {
+  position: relative;
+  grid-row: 1;
+  align-self: start;
+  width: 331px;
+  height: 346px;
+  background: var(--sage-green);
+}
+
+.exercise-step--one {
+  grid-column: 1 / 4;
+  margin-left: 10px;
+}
+
+.exercise-step--two {
+  grid-column: 4 / 7;
+  margin-left: -1.5px;
+}
+
+.exercise-step--three {
+  grid-column: 7 / 10;
+  margin-left: 8px;
+}
+
+.exercise-step--four {
+  grid-column: 10 / 13;
+  margin-left: 17.5px;
+}
+
+.exercise-step__image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 331px;
+  height: 186px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.exercise-step--two .exercise-step__image {
+  top: -3px;
+  height: 187px;
+}
+
+.exercise-step--three .exercise-step__image {
+  top: -3px;
+  width: 329px;
+  height: 185px;
+}
+
+.exercise-step--four .exercise-step__image {
+  top: -6px;
+  height: 187px;
+}
+
+.exercise-step__number-image {
+  position: absolute;
+  display: block;
+  width: 56px;
+  height: 55px;
+}
+
+.exercise-step__number {
+  position: absolute;
+  display: grid;
+  width: 56px;
+  height: 55px;
+  place-items: center;
+  color: var(--white);
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.15;
+}
+
+.exercise-step--one .exercise-step__number-image,
+.exercise-step--one .exercise-step__number {
+  top: 200px;
+  left: 7px;
+}
+
+.exercise-step--two .exercise-step__number-image,
+.exercise-step--two .exercise-step__number {
+  top: 201px;
+  left: 11px;
+}
+
+.exercise-step--three .exercise-step__number-image,
+.exercise-step--three .exercise-step__number {
+  top: 201px;
+  left: 4px;
+}
+
+.exercise-step--four .exercise-step__number-image,
+.exercise-step--four .exercise-step__number {
+  top: 204px;
+  left: 16px;
+}
+
+.exercise-step__title,
+.exercise-step__description {
+  position: absolute;
+  margin: 0;
+  color: var(--black);
+  font-family: var(--font-body);
+  font-style: normal;
+}
+
+.exercise-step__title {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.15;
+}
+
+.exercise-step__description {
+  width: 217px;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.15;
+}
+
+.exercise-step--one .exercise-step__title {
+  top: 201px;
+  left: 70px;
+  width: 285px;
+}
+
+.exercise-step--two .exercise-step__title {
+  top: 188px;
+  left: 79px;
+  width: 262px;
+}
+
+.exercise-step--three .exercise-step__title {
+  top: 216px;
+  left: 72px;
+  width: 262px;
+}
+
+.exercise-step--four .exercise-step__title {
+  top: 213px;
+  left: 89px;
+  width: 214px;
+}
+
+.exercise-step--one .exercise-step__description {
+  top: 237px;
+  left: 72px;
+}
+
+.exercise-step--two .exercise-step__description {
+  top: 247px;
+  left: 77px;
+}
+
+.exercise-step--three .exercise-step__description {
+  top: 254px;
+  left: 66px;
+}
+
+.exercise-step--four .exercise-step__description {
+  top: 247px;
+  left: 86px;
+}
+
+.exercise-summary {
+  display: grid;
+  grid-column: 1 / -1;
+  grid-row: 3;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+  grid-template-rows: 7px 33px 91px 48px 1fr;
+}
+
+.exercise-summary__title,
+.exercise-summary__description {
+  grid-column: 1 / 7;
+  margin: 0;
+  color: var(--black);
+  font-family: var(--font-body);
+  font-style: normal;
+}
+
+.exercise-summary__title {
+  grid-row: 2;
+  width: 697px;
+  margin-left: 37px;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.15;
+}
+
+.exercise-summary__description {
+  grid-row: 3;
+  width: 653px;
+  margin-left: 35px;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 1.15;
+}
+
+.exercise-summary__description p {
+  margin: 0;
+}
+
+.exercise-summary__cta {
+  grid-column: 1 / 7;
+  grid-row: 4;
+  justify-content: flex-start;
+  gap: 6px;
+  width: 422px;
+  height: 48px;
+  margin-left: 33px;
+  padding: 0 11px;
+  font-size: 32px;
+  line-height: 1.15;
+  white-space: nowrap;
+}
+
+.exercise-page .primary-nav__link:focus-visible {
+  outline: 3px solid var(--black);
+  outline-offset: 3px;
+}
+
+/* Gode råd – Desktop (Figma frame 54:180) */
+.advice-page {
+  grid-template-rows: 160px 836px 28px;
+}
+
+.advice-page .site-header {
+  position: relative;
+  grid-column: 1 / -1;
+  grid-row: 1;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+}
+
+.advice-page .brand {
+  position: absolute;
+  top: 75px;
+  left: -9px;
+  display: block;
+  width: 353px;
+  height: 96px;
+  padding: 0;
+}
+
+.advice-page .brand__tree {
+  position: absolute;
+  top: -52px;
+  left: 42px;
+  width: 35px;
+  height: 55px;
+}
+
+.advice-page .brand__name {
+  position: absolute;
+  top: 0;
+  left: 36px;
+  font-size: 48px;
+  line-height: 1;
+}
+
+.advice-page .brand__tagline {
+  position: absolute;
+  top: 54px;
+  left: 64px;
+  margin: 0;
+  font-size: 24px;
+  line-height: 1.15;
+}
+
+.advice-page .primary-nav {
+  position: absolute;
+  inset: 0;
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+  grid-template-rows: 1fr;
+  padding: 0;
+}
+
+.advice-page .primary-nav__link {
+  align-self: start;
+  font-size: 32px;
+  line-height: 1.15;
+}
+
+.advice-page .primary-nav__link--home {
+  grid-column: 4;
+  margin: 85px 0 0 4.5px;
+}
+
+.advice-page .primary-nav__link--guide {
+  grid-column: 5;
+  margin: 88px 0 0 7.67px;
+}
+
+.advice-page .primary-nav__link--gear {
+  grid-column: 7;
+  margin: 90px 0 0 10px;
+}
+
+.advice-page .primary-nav__link--exercise {
+  grid-column: 8;
+  width: 121px;
+  margin: 82px 0 0 11.17px;
+}
+
+.advice-page .primary-nav__link--advice {
+  grid-column: 9;
+  width: 102px;
+  margin: 88px 0 0 25.33px;
+}
+
+.advice-page .button--header {
+  grid-column: 11 / 13;
+  width: 203px;
+  height: 61px;
+  margin: 76px 0 0 6.67px;
+}
+
+.advice-main {
+  display: grid;
+  grid-column: 1 / -1;
+  grid-row: 2;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+  grid-template-rows: 694px 142px;
+}
+
+.advice-hero,
+.advice-cards {
+  position: relative;
+  grid-column: 1 / -1;
+  grid-row: 1;
+}
+
+.advice-hero__eyebrow,
+.advice-hero h1,
+.advice-hero__description {
+  position: absolute;
+  left: 16px;
+  margin: 0;
+  color: var(--black);
+  font-family: var(--font-body);
+  font-style: normal;
+}
+
+.advice-hero__eyebrow {
+  top: 78px;
+  width: 302px;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 1.15;
+  text-transform: uppercase;
+}
+
+.advice-hero h1 {
+  top: 126px;
+  width: 847px;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 22px;
+  white-space: nowrap;
+}
+
+.advice-hero__description {
+  top: 174px;
+  width: 571px;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 1.15;
+}
+
+.advice-hero__image {
+  position: absolute;
+  top: 47px;
+  left: calc(58.333333% + 1.17px);
+  display: block;
+  width: 599px;
+  height: 337px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.advice-cards {
+  z-index: 1;
+}
+
+.advice-card {
+  position: absolute;
+  width: 360px;
+  color: var(--black);
+  font-family: var(--font-body);
+  font-style: normal;
+}
+
+.advice-card--small-steps {
+  top: 434px;
+  left: 0;
+}
+
+.advice-card--own-pace {
+  top: 439px;
+  left: calc(33.333333% - 13.33px);
+}
+
+.advice-card--nature {
+  top: 429px;
+  left: calc(58.333333% + 109.17px);
+}
+
+.advice-card__circle {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 101px;
+  height: 95px;
+}
+
+.advice-card__flower-icon,
+.advice-card__evergreen-icon {
+  position: absolute;
+  top: 23.5px;
+  left: 26.5px;
+  display: block;
+  width: 48px;
+  height: 48px;
+}
+
+.advice-card__tree-slot {
+  position: absolute;
+  top: 23.5px;
+  left: 26.5px;
+  display: grid;
+  width: 48px;
+  height: 48px;
+  place-items: center;
+}
+
+.advice-card__tree-slot img {
+  display: block;
+  width: 34.6283px;
+  height: 42.5333px;
+}
+
+.advice-card__title,
+.advice-card__description {
+  position: absolute;
+  margin: 0;
+  font-family: var(--font-body);
+  font-style: normal;
+}
+
+.advice-card__title {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 1.15;
+}
+
+.advice-card__description {
+  width: 258px;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 1.15;
+}
+
+.advice-card--small-steps .advice-card__title {
+  top: 27px;
+  left: 119px;
+  width: 302px;
+}
+
+.advice-card--small-steps .advice-card__description {
+  top: 58px;
+  left: 121px;
+}
+
+.advice-card--own-pace .advice-card__title {
+  top: 9px;
+  left: 111px;
+  width: 327px;
+}
+
+.advice-card--own-pace .advice-card__description {
+  top: 48px;
+  left: 116px;
+}
+
+.advice-card--nature .advice-card__title {
+  top: 10px;
+  left: 121px;
+  width: 294px;
+}
+
+.advice-card--nature .advice-card__description {
+  top: 102px;
+  left: 121px;
+}
+
+.advice-reminder {
+  position: relative;
+  grid-column: 1 / -1;
+  grid-row: 2;
+  left: -1px;
+  width: 1440px;
+  height: 142px;
+  background: var(--sage-green);
+}
+
+.advice-reminder__title,
+.advice-reminder__description {
+  position: absolute;
+  margin: 0;
+  color: var(--black);
+  font-family: var(--font-body);
+  font-style: normal;
+}
+
+.advice-reminder__title {
+  top: 20px;
+  left: 48px;
+  width: 254px;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 1.15;
+}
+
+.advice-reminder__description {
+  top: 55px;
+  left: 44px;
+  width: 891px;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 1.15;
+}
+
+.advice-reminder__cta {
+  position: absolute;
+  top: 50px;
+  left: calc(66.666667% + 12.33px);
+  justify-content: flex-start;
+  gap: 6px;
+  width: 245px;
+  height: 56px;
+  padding: 0 22px;
+  font-size: 32px;
+  line-height: 1.15;
+  white-space: nowrap;
+}
+
+.advice-page .primary-nav__link:focus-visible {
+  outline: 3px solid var(--black);
+  outline-offset: 3px;
+}
+
+/* Responsive layouts: desktop rules above stay intact. */
+@media (max-width: 767px) {
+  body {
+    min-width: 320px;
+  }
+
+  .page-frame {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    width: 100%;
+    height: auto;
+    min-height: 100vh;
+    padding: 20px 16px 32px;
+    overflow: visible;
+    border-width: 1px;
+  }
+
+  .site-header,
+  .guide-page .site-header,
+  .equipment-page .site-header,
+  .exercise-page .site-header,
+  .advice-page .site-header {
+    position: static;
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 120px;
+    grid-template-rows: auto auto;
+    gap: 16px 0;
+    width: 100%;
+    grid-column: auto;
+    grid-row: auto;
+  }
+
+  .brand,
+  .guide-page .brand,
+  .equipment-page .brand,
+  .exercise-page .brand,
+  .advice-page .brand {
+    position: relative;
+    inset: auto;
+    display: grid;
+    grid-column: 1;
+    grid-row: 1;
+    grid-template-columns: 35px minmax(0, 1fr);
+    grid-template-rows: 37px 24px;
+    align-content: center;
+    gap: 0 12px;
+    width: auto;
+    height: 79px;
+    padding: 0;
+  }
+
+  .brand__tree,
+  .guide-page .brand__tree,
+  .equipment-page .brand__tree,
+  .exercise-page .brand__tree,
+  .advice-page .brand__tree {
+    position: static;
+    grid-column: 1;
+    grid-row: 1 / 3;
+    align-self: center;
+    width: 35px;
+    height: 55px;
+  }
+
+  .brand__name,
+  .guide-page .brand__name,
+  .equipment-page .brand__name,
+  .exercise-page .brand__name,
+  .advice-page .brand__name {
+    position: static;
+    grid-column: 2;
+    grid-row: 1;
+    align-self: end;
+    font-size: 28px;
+    line-height: 1.15;
+  }
+
+  .brand__tagline,
+  .guide-page .brand__tagline,
+  .equipment-page .brand__tagline,
+  .exercise-page .brand__tagline,
+  .advice-page .brand__tagline {
+    position: static;
+    grid-column: 2;
+    grid-row: 2;
+    align-self: start;
+    margin: 0;
+    font-size: 16px;
+    line-height: 1.15;
+  }
+
+  .button--header,
+  .guide-page .button--header,
+  .equipment-page .button--header,
+  .exercise-page .button--header,
+  .advice-page .button--header {
+    position: static;
+    grid-column: 2;
+    grid-row: 1;
+    align-self: center;
+    justify-self: end;
+    width: 120px;
+    height: 44px;
+    margin: 0;
+    font-size: 20px;
+    white-space: nowrap;
+  }
+
+  .primary-nav,
+  .guide-page .primary-nav,
+  .equipment-page .primary-nav,
+  .exercise-page .primary-nav,
+  .advice-page .primary-nav {
+    position: static;
+    inset: auto;
+    display: flex;
+    flex-wrap: wrap;
+    grid-column: 1 / -1;
+    grid-row: 2;
+    gap: 8px;
+    width: 100%;
+    padding: 0;
+  }
+
+  .primary-nav__link,
+  .guide-page .primary-nav__link,
+  .equipment-page .primary-nav__link,
+  .exercise-page .primary-nav__link,
+  .advice-page .primary-nav__link {
+    position: static;
+    display: block;
+    width: auto;
+    margin: 0;
+    padding: 8px 12px;
+    border-radius: 8px;
+    font-size: 16px;
+    line-height: 1.15;
+    white-space: nowrap;
+  }
+
+  main,
+  .guide-main,
+  .equipment-main,
+  .exercise-main,
+  .advice-main {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    width: 100%;
+    min-width: 0;
+    grid-column: auto;
+    grid-row: auto;
+    grid-template-columns: minmax(0, 1fr);
+    grid-template-rows: none;
+  }
+
+  .hero,
+  .guide-hero,
+  .equipment-hero,
+  .exercise-hero,
+  .advice-hero {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: 100%;
+    grid-column: auto;
+    grid-row: auto;
+    grid-template-columns: minmax(0, 1fr);
+    grid-template-rows: none;
+  }
+
+  .hero__copy,
+  .guide-hero__copy,
+  .equipment-hero__copy,
+  .exercise-hero__copy {
+    position: static;
+    display: contents;
+    grid-column: auto;
+    grid-row: auto;
+    grid-template-columns: minmax(0, 1fr);
+    grid-template-rows: none;
+    padding: 0;
+    transform: none;
+  }
+
+  .eyebrow,
+  .guide-hero__eyebrow,
+  .equipment-hero__eyebrow,
+  .exercise-hero__eyebrow,
+  .advice-hero__eyebrow {
+    position: static;
+    width: 100%;
+    margin: 0;
+    font-size: 18px;
+    line-height: 1.15;
+    text-transform: uppercase;
+  }
+
+  .hero h1,
+  .guide-hero h1,
+  .equipment-hero h1,
+  .exercise-hero h1,
+  .advice-hero h1 {
+    position: static;
+    width: 100%;
+    margin: 0;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 22px;
+    white-space: normal;
+  }
+
+  .guide-hero h1,
+  .equipment-hero h1,
+  .exercise-hero h1,
+  .advice-hero h1 {
+    line-height: 1.2;
+  }
+
+  .hero h1 {
+    line-height: 1.2;
+  }
+
+  .hero__description,
+  .guide-hero__description,
+  .equipment-hero__description,
+  .exercise-hero__description,
+  .advice-hero__description {
+    position: static;
+    width: 100%;
+    margin: 0;
+    font-size: 18px;
+    line-height: 1.15;
+  }
+
+  .hero__actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin: 0;
+    transform: none;
+  }
+
+  .button--hero,
+  .button--read-more,
+  .guide-hero__cta,
+  .equipment-summary__cta,
+  .exercise-summary__cta,
+  .advice-reminder__cta {
+    display: inline-flex;
+    justify-content: center;
+    gap: 8px;
+    width: auto;
+    min-width: 0;
+    max-width: 100%;
+    height: 44px;
+    margin: 0;
+    padding: 0 16px;
+    font-size: 20px;
+    line-height: 1.15;
+    white-space: normal;
+  }
+
+  .button--hero span {
+    width: auto;
+  }
+
+  .button--hero img {
+    width: 18px;
+  }
+
+  .hero__image,
+  .guide-hero__image,
+  .equipment-hero__image,
+  .exercise-hero__image,
+  .advice-hero__image {
+    position: static;
+    display: block;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1.427 / 1;
+    margin: 0;
+    border-radius: 10px;
+    object-fit: cover;
+  }
+
+  .introduction {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    width: 100%;
+    grid-column: auto;
+    grid-row: auto;
+  }
+
+  .introduction__eyebrow,
+  .introduction h2,
+  .introduction__copy,
+  .introduction__emphasis {
+    width: 100%;
+    margin: 0 !important;
+    transform: none;
+  }
+
+  .introduction__eyebrow {
+    font-size: 16px;
+    line-height: 1.15;
+  }
+
+  .introduction h2 {
+    font-size: 22px;
+    line-height: 1.15;
+  }
+
+  .introduction__copy {
+    font-size: 16px;
+    line-height: 1.15;
+  }
+
+  .introduction__emphasis {
+    font-size: 20px;
+    line-height: 1.15;
+  }
+
+  .benefits,
+  .guide-steps,
+  .equipment-cards,
+  .exercise-steps,
+  .advice-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: 100%;
+    align-content: initial;
+    grid-column: auto;
+    grid-row: auto;
+    grid-template-columns: minmax(0, 1fr);
+    grid-template-rows: none;
+    transform: none;
+  }
+
+  .benefit-card,
+  .guide-step,
+  .equipment-card,
+  .exercise-step {
+    position: relative;
+    display: grid;
+    grid-template-columns: 56px minmax(0, 1fr);
+    grid-template-rows: auto auto auto auto;
+    gap: 8px 12px;
+    align-self: stretch;
+    grid-column: auto;
+    grid-row: auto;
+    width: 100%;
+    height: auto;
+    min-height: 0;
+    margin: 0;
+    padding: 0 16px 16px;
+    overflow: hidden;
+  }
+
+  .benefit-card {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 0 16px 16px;
+  }
+
+  .benefit-card__image,
+  .benefit-card--guide .benefit-card__image,
+  .benefit-card--exercises .benefit-card__image,
+  .benefit-card--wellbeing .benefit-card__image {
+    position: static;
+    display: block;
+    width: calc(100% + 32px);
+    height: auto;
+    aspect-ratio: 1.75 / 1;
+    margin: 0 -16px;
+    object-fit: cover;
+  }
+
+  .benefit-card--guide .benefit-card__image {
+    aspect-ratio: 1.75 / 1;
+  }
+
+  .benefit-card--exercises .benefit-card__image {
+    aspect-ratio: 1.537 / 1;
+  }
+
+  .benefit-card--wellbeing .benefit-card__image {
+    aspect-ratio: 1.779 / 1;
+  }
+
+  .benefit-card__content {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    width: 100%;
+    padding: 16px 0;
+  }
+
+  .benefit-card h3,
+  .benefit-card p,
+  .benefit-card a {
+    width: 100%;
+    margin: 0;
+    font-size: 16px;
+    line-height: 1.15;
+  }
+
+  .benefit-card h3 {
+    font-size: 20px;
+  }
+
+  .guide-step__image,
+  .equipment-card__image,
+  .exercise-step__image,
+  .guide-step--gear .guide-step__image,
+  .exercise-step--two .exercise-step__image,
+  .exercise-step--three .exercise-step__image,
+  .exercise-step--four .exercise-step__image,
+  .equipment-card--water .equipment-card__image,
+  .equipment-card--clothes .equipment-card__image,
+  .equipment-card--towel .equipment-card__image {
+    position: static;
+    display: block;
+    grid-column: 1 / -1;
+    grid-row: 1;
+    width: calc(100% + 32px);
+    height: auto;
+    aspect-ratio: 1.75 / 1;
+    margin: 0 -16px;
+    border-radius: 10px;
+    object-fit: cover;
+  }
+
+  .guide-step__number-image,
+  .equipment-card__number-image,
+  .exercise-step__number-image,
+  .guide-step__number,
+  .equipment-card__number,
+  .exercise-step__number {
+    position: static;
+    grid-column: 1;
+    grid-row: 2;
+    align-self: start;
+    width: 56px;
+    height: 55px;
+    margin: 0;
+  }
+
+  .guide-step__number,
+  .equipment-card__number,
+  .exercise-step__number {
+    display: grid;
+    place-items: center;
+    font-size: 24px;
+  }
+
+  .guide-step__title,
+  .guide-step__description,
+  .guide-step__link,
+  .equipment-card__title,
+  .equipment-card__description,
+  .equipment-card__status,
+  .exercise-step__title,
+  .exercise-step__description {
+    position: static;
+    grid-column: 2;
+    width: 100%;
+    margin: 0;
+    font-family: var(--font-body);
+    line-height: 1.3;
+  }
+
+  .guide-step__title,
+  .equipment-card__title,
+  .exercise-step__title {
+    grid-row: 2;
+    align-self: center;
+    font-size: 20px;
+    font-weight: 700;
+  }
+
+  .guide-step__description,
+  .equipment-card__description,
+  .exercise-step__description {
+    grid-row: 3;
+    font-size: 16px;
+  }
+
+  .guide-step__link,
+  .equipment-card__status {
+    grid-row: 4;
+    font-size: 16px;
+    font-weight: 700;
+  }
+
+  .equipment-card__status {
+    font-size: 14px;
+  }
+
+  .equipment-main,
+  .exercise-main,
+  .guide-main,
+  .advice-main {
+    gap: 24px;
+  }
+
+  .equipment-hero,
+  .exercise-hero,
+  .guide-hero {
+    gap: 16px;
+  }
+
+  .equipment-summary,
+  .exercise-summary {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    width: 100%;
+    grid-column: auto;
+    grid-row: auto;
+    grid-template-columns: minmax(0, 1fr);
+    grid-template-rows: none;
+  }
+
+  .equipment-summary__title,
+  .equipment-summary__description,
+  .exercise-summary__title,
+  .exercise-summary__description {
+    width: 100%;
+    margin: 0;
+    font-size: 20px;
+    line-height: 1.35;
+  }
+
+  .equipment-summary__description,
+  .exercise-summary__description {
+    font-size: 16px;
+  }
+
+  .exercise-summary__description p {
+    margin: 0 0 8px;
+  }
+
+  .exercise-hero__duration {
+    position: static;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    width: 100%;
+    margin: 0;
+    font-size: 16px;
+    line-height: 1.3;
+    white-space: normal;
+  }
+
+  .exercise-hero__duration-icon {
+    flex: 0 0 20px;
+    width: 20px;
+    height: 20px;
+  }
+
+  .advice-hero__eyebrow,
+  .advice-hero h1,
+  .advice-hero__description {
+    left: auto;
+    top: auto;
+  }
+
+  .advice-cards {
+    gap: 24px;
+  }
+
+  .advice-card {
+    position: relative;
+    display: grid;
+    grid-template-columns: 101px minmax(0, 1fr);
+    grid-template-rows: auto auto;
+    gap: 8px 12px;
+    width: 100%;
+    min-height: 95px;
+    padding: 0;
+  }
+
+  .advice-card--small-steps,
+  .advice-card--own-pace,
+  .advice-card--nature {
+    top: auto;
+    left: auto;
+  }
+
+  .advice-card__circle {
+    position: static;
+    grid-column: 1;
+    grid-row: 1 / 3;
+    width: 101px;
+    height: 95px;
+  }
+
+  .advice-card__flower-icon,
+  .advice-card__evergreen-icon {
+    top: 23.5px;
+    left: 26.5px;
+  }
+
+  .advice-card__tree-slot {
+    top: 23.5px;
+    left: 26.5px;
+  }
+
+  .advice-card__title,
+  .advice-card__description {
+    position: static;
+    grid-column: 2;
+    width: 100%;
+    margin: 0;
+    line-height: 1.3;
+  }
+
+  .advice-card__title {
+    grid-row: 1;
+    font-size: 20px;
+  }
+
+  .advice-card__description {
+    grid-row: 2;
+    font-size: 16px;
+  }
+
+  .advice-card--small-steps .advice-card__title,
+  .advice-card--own-pace .advice-card__title,
+  .advice-card--nature .advice-card__title,
+  .advice-card--small-steps .advice-card__description,
+  .advice-card--own-pace .advice-card__description,
+  .advice-card--nature .advice-card__description {
+    left: auto;
+    top: auto;
+    width: 100%;
+  }
+
+  .advice-reminder {
+    position: relative;
+    left: -16px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    width: calc(100% + 32px);
+    height: auto;
+    min-height: 0;
+    padding: 20px 16px;
+  }
+
+  .advice-reminder__title,
+  .advice-reminder__description,
+  .advice-reminder__cta {
+    position: static;
+    width: 100%;
+    margin: 0;
+  }
+
+  .advice-reminder__title {
+    font-size: 22px;
+  }
+
+  .advice-reminder__description {
+    font-size: 16px;
+    line-height: 1.35;
+  }
+
+  .advice-reminder__cta {
+    width: max-content;
+  }
+}
+
+@media (max-width: 360px) {
+  .page-frame {
+    padding-right: 12px;
+    padding-left: 12px;
+  }
+
+  .site-header,
+  .guide-page .site-header,
+  .equipment-page .site-header,
+  .exercise-page .site-header,
+  .advice-page .site-header {
+    grid-template-columns: minmax(0, 1fr) 104px;
+  }
+
+  .brand__name,
+  .guide-page .brand__name,
+  .equipment-page .brand__name,
+  .exercise-page .brand__name,
+  .advice-page .brand__name {
+    font-size: 23px;
+  }
+
+  .brand__tagline,
+  .guide-page .brand__tagline,
+  .equipment-page .brand__tagline,
+  .exercise-page .brand__tagline,
+  .advice-page .brand__tagline {
+    font-size: 14px;
+  }
+
+  .button--header,
+  .guide-page .button--header,
+  .equipment-page .button--header,
+  .exercise-page .button--header,
+  .advice-page .button--header {
+    width: 104px;
+    font-size: 17px;
+  }
+
+  .hero h1,
+  .guide-hero h1,
+  .equipment-hero h1,
+  .exercise-hero h1,
+  .advice-hero h1 {
+    font-size: 32px;
+  }
+
+  .advice-reminder {
+    left: -12px;
+    width: calc(100% + 24px);
+  }
+}
