@@ -483,3 +483,305 @@ main {
     margin-right: 0;
   }
 }
+
+/* Begynderguide – Desktop (Figma frame 43:8) */
+.guide-page {
+  grid-template-rows: 160px 485px 377px;
+}
+
+.guide-page .site-header {
+  position: relative;
+  grid-column: 1 / -1;
+  grid-row: 1;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+}
+
+.guide-page .brand {
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  display: block;
+  width: 328px;
+  height: 140px;
+  padding: 0;
+}
+
+.guide-page .brand__tree {
+  position: absolute;
+  top: 0;
+  left: 38px;
+  width: 35px;
+  height: 55px;
+}
+
+.guide-page .brand__name {
+  position: absolute;
+  top: 60px;
+  left: 36px;
+  font-size: 48px;
+  line-height: 1;
+}
+
+.guide-page .brand__tagline {
+  position: absolute;
+  top: 108px;
+  left: 61px;
+  margin: 0;
+  font-size: 24px;
+  line-height: 1.15;
+}
+
+.guide-page .primary-nav {
+  position: absolute;
+  inset: 0;
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+  grid-template-rows: 1fr;
+  padding: 0;
+}
+
+.guide-page .primary-nav__link {
+  align-self: start;
+  font-size: 32px;
+  line-height: 1.15;
+}
+
+.guide-page .primary-nav__link--home {
+  grid-column: 4;
+  margin: 85px 0 0 4.5px;
+}
+
+.guide-page .primary-nav__link--guide {
+  grid-column: 5;
+  margin: 88px 0 0 7.67px;
+}
+
+.guide-page .primary-nav__link--gear {
+  grid-column: 7;
+  margin: 90px 0 0 10px;
+}
+
+.guide-page .primary-nav__link--exercise {
+  grid-column: 8;
+  width: 121px;
+  margin: 82px 0 0 11.17px;
+}
+
+.guide-page .primary-nav__link--advice {
+  grid-column: 9;
+  width: 102px;
+  margin: 88px 0 0 25.33px;
+}
+
+.guide-page .button--header {
+  grid-column: 11 / 13;
+  width: 203px;
+  height: 61px;
+  margin: 76px 0 0 6.67px;
+}
+
+.guide-main {
+  display: grid;
+  grid-column: 1 / -1;
+  grid-row: 2 / 4;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+  grid-template-rows: 485px 377px;
+}
+
+.guide-hero {
+  display: grid;
+  grid-column: 1 / -1;
+  grid-row: 1;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+  grid-template-rows: 101px 37px 32px 113px 48px 1fr;
+}
+
+.guide-hero__copy {
+  display: grid;
+  grid-column: 1 / 6;
+  grid-row: 1 / -1;
+  grid-template-columns: minmax(0, 1fr);
+  grid-template-rows: 101px 37px 32px 113px 48px 1fr;
+  padding-left: 36px;
+  transform: translateY(-1px);
+}
+
+.guide-hero__eyebrow,
+.guide-hero h1,
+.guide-hero__description {
+  grid-column: 1;
+  margin: 0;
+  color: var(--black);
+  font-family: var(--font-body);
+  font-style: normal;
+}
+
+.guide-hero__eyebrow {
+  grid-row: 2;
+  width: 302px;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 1.15;
+  text-transform: uppercase;
+}
+
+.guide-hero h1 {
+  grid-row: 3;
+  width: 605px;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 22px;
+}
+
+.guide-hero__description {
+  grid-row: 4;
+  width: 544px;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 1.15;
+}
+
+.guide-hero__cta {
+  grid-column: 1;
+  grid-row: 5;
+  justify-content: flex-start;
+  gap: 6px;
+  width: 422px;
+  height: 48px;
+  padding: 0 11px;
+  font-size: 32px;
+  line-height: 1.15;
+  white-space: nowrap;
+}
+
+.guide-hero__image {
+  display: block;
+  grid-column: 7 / 12;
+  grid-row: 1 / 6;
+  align-self: start;
+  width: 598px;
+  height: 441px;
+  margin: 27px 0 0;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.guide-steps {
+  display: grid;
+  grid-column: 1 / -1;
+  grid-row: 2;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+  grid-template-rows: 346px;
+  align-content: start;
+  transform: translateY(-1px);
+}
+
+.guide-step {
+  position: relative;
+  grid-row: 1;
+  align-self: start;
+  width: 331px;
+  height: 346px;
+  margin-top: 0;
+  background: var(--sage-green);
+}
+
+.guide-step--location {
+  grid-column: 1 / 4;
+  margin-left: 16px;
+}
+
+.guide-step--gear {
+  grid-column: 4 / 7;
+  margin-left: 4.5px;
+}
+
+.guide-step--exercise {
+  grid-column: 7 / 10;
+  margin-left: 14px;
+}
+
+.guide-step--pace {
+  grid-column: 10 / 13;
+  margin-left: 23.5px;
+}
+
+.guide-step__image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 331px;
+  height: 178px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.guide-step__number-image {
+  position: absolute;
+  top: 200px;
+  left: 0;
+  display: block;
+  width: 56px;
+  height: 55px;
+}
+
+.guide-step__number {
+  position: absolute;
+  top: 200px;
+  left: 0;
+  display: grid;
+  width: 56px;
+  height: 55px;
+  place-items: center;
+  color: var(--white);
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.15;
+}
+
+.guide-step__title,
+.guide-step__description {
+  position: absolute;
+  margin: 0;
+  color: var(--black);
+  font-family: var(--font-body);
+  font-style: normal;
+}
+
+.guide-step__title {
+  top: 201px;
+  left: 63px;
+  width: 217px;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.15;
+}
+
+.guide-step__description {
+  top: 260px;
+  left: 63px;
+  width: 217px;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.15;
+}
+
+.guide-step__link {
+  position: absolute;
+  top: 307px;
+  left: 63px;
+  width: 148px;
+  color: var(--black);
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 1.15;
+  text-decoration: none;
+}
+
+.guide-page .primary-nav__link:focus-visible,
+.guide-page .guide-step__link:focus-visible {
+  outline: 3px solid var(--black);
+  outline-offset: 3px;
+}
